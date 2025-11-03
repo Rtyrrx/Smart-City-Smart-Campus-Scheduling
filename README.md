@@ -543,7 +543,7 @@ Nine datasets were systematically generated to test algorithm performance across
 **Strengths**:
 - Modular design with clear separation of concerns
 - Comprehensive documentation (Javadoc on all public APIs)
-- Extensive test coverage (22 unit tests, 100% pass rate)
+- Extensive test coverage (22 tests, 100% pass rate)
 - Clean package structure (graph.scc, graph.topo, graph.dagsp)
 - Instrumentation built-in for performance analysis
 
@@ -616,12 +616,315 @@ All implementations were validated through comprehensive unit testing (22 tests,
 
 ### Online Resources
 
-5. "Graph Algorithms." *Wikipedia*. https://en.wikipedia.org/wiki/Graph_algorithm
+1."Graph Algorithms." *Wikipedia*. https://en.wikipedia.org/wiki/Graph_algorithm
 
-6. "Strongly Connected Components." *GeeksforGeeks*. https://www.geeksforgeeks.org/strongly-connected-components/
+2."Strongly Connected Components." *GeeksforGeeks*. https://www.geeksforgeeks.org/strongly-connected-components/
 
+3."Topological Sorting." *GeeksforGeeks*. https://www.geeksforgeeks.org/topological-sorting/
 
 ---
 
+## 11. Appendix: Build and Run Instructions
+
+This appendix provides detailed instructions for setting up, building, and running the Smart City Scheduler project.
+
+### 11.1 Prerequisites
+
+**Java Development Environment:**
+- Java JDK 11 or higher
+- Apache Maven 3.6 or higher
+- IDE (IntelliJ IDEA, Eclipse, or VS Code) - optional
+
+**Python Environment (Optional - for visualization):**
+- Python 3.7 or higher
+- Required packages: matplotlib, pandas, seaborn, numpy
+
+### 11.2 Cloning the Repository
+
+```bash
+git clone https://github.com/Rtyrrx/Smart-City-Smart-Campus-Scheduling.git
+cd Smart-City-Smart-Campus-Scheduling
+```
+
+### 11.3 Building the Project
+
+#### Using Maven
+
+```bash
+# Clean and install dependencies
+mvn clean install
+
+# Compile source code
+mvn compile
+
+# Compile and run tests
+mvn test
+```
+
+#### Expected Build Output
+
+```
+[INFO] BUILD SUCCESS
+[INFO] Total time: 15.234 s
+[INFO] Finished at: 2025-11-03T10:30:00Z
+```
+
+### 11.4 Running the Main Application
+
+The Smart City Scheduler can be executed in multiple ways:
+
+#### Option 1: Using the Batch Script (Windows - Recommended)
+
+```cmd
+run.bat
+```
+
+This script automatically compiles and runs the application with proper classpath configuration.
+
+#### Option 2: Using Maven Exec Plugin
+
+```bash
+mvn exec:java -Dexec.mainClass="com.rtyrrx.mst.SmartCityScheduler"
+```
+
+#### Option 3: Using Maven Package
+
+```bash
+mvn clean package
+java -cp target/classes com.rtyrrx.mst.SmartCityScheduler
+```
+
+#### Option 4: From IDE
+
+1. Import the project as a Maven project
+2. Navigate to `src/main/java/com/rtyrrx/mst/SmartCityScheduler.java`
+3. Right-click the file and select "Run SmartCityScheduler.main()"
+
+### 11.5 Running Unit Tests
+
+#### Run All Tests
+
+```bash
+mvn test
+```
+
+#### Run Specific Test Suite
+
+```bash
+# Run SCC tests
+mvn test -Dtest=SCCTest
+
+# Run Topological Sort tests
+mvn test -Dtest=TopologicalSortTest
+
+# Run DAG Shortest Path tests
+mvn test -Dtest=DAGShortestPathTest
+```
+
+#### View Test Reports
+
+After running tests, detailed reports are available in:
+- **Text format**: `target/surefire-reports/*.txt`
+- **XML format**: `target/surefire-reports/TEST-*.xml`
+
+Expected test results:
+```
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 0
+```
+
+### 11.6 Generating Performance Plots
+
+After running the main application, generate visualization plots:
+
+#### Install Python Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+#### Generate Plots
+
+```bash
+python generate_plots.py
+```
+
+This creates 8 plots in the `plots/` directory:
+1. **01_dataset_characteristics.png** - Graph size and density analysis
+2. **02_algorithm_execution_times.png** - Comparative timing results
+3. **03_complexity_validation.png** - O(V+E) complexity confirmation
+4. **04_scaling_analysis.png** - Performance scaling behavior
+5. **05_operation_counts.png** - Operation count analysis
+6. **06_scc_analysis.png** - SCC detection metrics
+7. **07_performance_heatmap.png** - Algorithm performance heatmap
+8. **08_comprehensive_summary.png** - Overall project summary
+
+### 11.7 Project Output Structure
+
+After running the application, the following outputs are generated:
+
+```
+SmartCity/
+├── target/
+│   ├── classes/               # Compiled Java classes
+│   ├── test-classes/          # Compiled test classes
+│   └── surefire-reports/      # Test execution reports
+├── plots/                     # Performance visualization plots
+└── results.json               # Raw performance metrics (if enabled)
+```
+
+### 11.8 Expected Console Output
+
+```
+=== Smart City Task Scheduling Analysis ===
+
+Analyzing 9 datasets with 3 graph algorithms...
+
+[1/9] Processing: data/small_dag.json
+  Graph: 8 vertices, 10 edges
+  
+  → Running SCC Detection (Tarjan's Algorithm)...
+    ✓ Execution time: 0.52 ms
+    ✓ Components found: 8
+    ✓ Largest SCC size: 1
+  
+  → Running Topological Sort (Kahn's Algorithm)...
+    ✓ Execution time: 0.31 ms
+    ✓ Valid topological ordering found
+    ✓ Order length: 8
+  
+  → Running DAG Shortest Path...
+    ✓ Execution time: 0.38 ms
+    ✓ Paths computed from source: task_0
+    ✓ Max distance: 15.0
+
+[2/9] Processing: data/small_cyclic.json
+  ...
+
+Analysis complete!
+Total execution time: 12.45 ms
+Results saved to plots/
+```
+
+### 11.9 Generating Custom Datasets
+
+To create custom test datasets:
+
+```bash
+mvn exec:java -Dexec.mainClass="com.rtyrrx.mst.data.DatasetGenerator"
+```
+
+Edit `DatasetGenerator.java` to configure:
+- Number of vertices
+- Edge density
+- Weight ranges
+- Graph type (DAG, cyclic, mixed)
+
+### 11.10 Troubleshooting
+
+#### Maven Build Fails
+
+```bash
+# Clear Maven cache and rebuild
+mvn clean
+rm -rf ~/.m2/repository/com/rtyrrx
+mvn install
+```
+
+#### Java Version Issues
+
+```bash
+# Check Java version
+java -version
+
+# Should show Java 11 or higher
+# If not, install/update JDK and set JAVA_HOME
+```
+
+#### Test Failures
+
+```bash
+# Run tests with verbose output
+mvn test -X
+
+# Run single test with stack traces
+mvn test -Dtest=SCCTest -Dmaven.surefire.debug=true
+```
+
+#### Python Plot Generation Issues
+
+```bash
+# Verify Python packages
+pip list | grep -E "matplotlib|pandas|seaborn|numpy"
+
+# Reinstall if needed
+pip install --upgrade -r requirements.txt
+```
+
+### 11.11 IDE-Specific Setup
+
+#### IntelliJ IDEA
+
+1. Open IntelliJ IDEA
+2. Select "Open" and choose the `SmartCity` directory
+3. IntelliJ will automatically detect the Maven project
+4. Wait for dependencies to download
+5. Right-click `pom.xml` → Maven → Reload Project
+
+#### Eclipse
+
+1. Open Eclipse
+2. File → Import → Maven → Existing Maven Projects
+3. Browse to `SmartCity` directory
+4. Select the project and click Finish
+5. Right-click project → Maven → Update Project
+
+#### VS Code
+
+1. Install "Extension Pack for Java"
+2. Open the `SmartCity` folder
+3. VS Code will detect Maven automatically
+4. Use integrated terminal to run Maven commands
+
+### 11.12 Contributing
+
+To contribute to this project:
+
+1. **Fork the repository** on GitHub
+2. **Create a feature branch**:
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+3. **Make your changes** with proper documentation
+4. **Run all tests**:
+   ```bash
+   mvn test
+   ```
+5. **Commit with descriptive message**:
+   ```bash
+   git commit -m "Add: detailed description of changes"
+   ```
+6. **Push to your fork**:
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+7. **Create a Pull Request** on GitHub
+
+**Code Style Guidelines:**
+- Follow Java naming conventions (camelCase for methods, PascalCase for classes)
+- Add JavaDoc comments for all public methods and classes
+- Include unit tests for new features (maintain 100% pass rate)
+- Keep methods focused and under 50 lines when possible
+- Use meaningful variable names
+
+### 11.13 Project Metadata
+
+- **Repository**: https://github.com/Rtyrrx/Smart-City-Smart-Campus-Scheduling
+- **Issue Tracker**: https://github.com/Rtyrrx/Smart-City-Smart-Campus-Scheduling/issues
+- **License**: Academic Use Only
+- **Author**: Bek Madias
+- **Course**: Design and Analysis of Algorithms
+- **Last Updated**: November 3, 2025
+
+---
 
 **End of Report**
