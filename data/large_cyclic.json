@@ -1,0 +1,407 @@
+{
+  "tasks": [
+    {
+      "id": "T0",
+      "name": "Monitor_StreetA0",
+      "duration": 5.0
+    },
+    {
+      "id": "T1",
+      "name": "Maintain_SensorD1",
+      "duration": 6.0
+    },
+    {
+      "id": "T2",
+      "name": "Clean_ParkC2",
+      "duration": 4.0
+    },
+    {
+      "id": "T3",
+      "name": "Analyze_StreetB3",
+      "duration": 7.0
+    },
+    {
+      "id": "T4",
+      "name": "Inspect_StreetA4",
+      "duration": 3.0
+    },
+    {
+      "id": "T5",
+      "name": "Monitor_StreetB5",
+      "duration": 3.0
+    },
+    {
+      "id": "T6",
+      "name": "Analyze_StreetA6",
+      "duration": 9.0
+    },
+    {
+      "id": "T7",
+      "name": "Analyze_SensorD7",
+      "duration": 8.0
+    },
+    {
+      "id": "T8",
+      "name": "Analyze_StreetB8",
+      "duration": 8.0
+    },
+    {
+      "id": "T9",
+      "name": "Clean_Zone9",
+      "duration": 6.0
+    },
+    {
+      "id": "T10",
+      "name": "Repair_Zone10",
+      "duration": 2.0
+    },
+    {
+      "id": "T11",
+      "name": "Maintain_ParkC11",
+      "duration": 8.0
+    },
+    {
+      "id": "T12",
+      "name": "Repair_StreetA12",
+      "duration": 1.0
+    },
+    {
+      "id": "T13",
+      "name": "Clean_StreetA13",
+      "duration": 10.0
+    },
+    {
+      "id": "T14",
+      "name": "Maintain_Zone14",
+      "duration": 8.0
+    },
+    {
+      "id": "T15",
+      "name": "Monitor_Zone15",
+      "duration": 1.0
+    },
+    {
+      "id": "T16",
+      "name": "Clean_StreetB16",
+      "duration": 7.0
+    },
+    {
+      "id": "T17",
+      "name": "Clean_CameraE17",
+      "duration": 1.0
+    },
+    {
+      "id": "T18",
+      "name": "Analyze_ParkC18",
+      "duration": 9.0
+    },
+    {
+      "id": "T19",
+      "name": "Maintain_ParkC19",
+      "duration": 2.0
+    },
+    {
+      "id": "T20",
+      "name": "Monitor_ParkC20",
+      "duration": 2.0
+    },
+    {
+      "id": "T21",
+      "name": "Analyze_CameraE21",
+      "duration": 1.0
+    },
+    {
+      "id": "T22",
+      "name": "Analyze_CameraE22",
+      "duration": 9.0
+    },
+    {
+      "id": "T23",
+      "name": "Maintain_StreetA23",
+      "duration": 1.0
+    },
+    {
+      "id": "T24",
+      "name": "Maintain_CameraE24",
+      "duration": 10.0
+    }
+  ],
+  "dependencies": [
+    {
+      "from": "T8",
+      "to": "T9",
+      "weight": 5.0
+    },
+    {
+      "from": "T9",
+      "to": "T10",
+      "weight": 3.0
+    },
+    {
+      "from": "T10",
+      "to": "T11",
+      "weight": 3.0
+    },
+    {
+      "from": "T11",
+      "to": "T8",
+      "weight": 4.0
+    },
+    {
+      "from": "T18",
+      "to": "T20",
+      "weight": 3.0
+    },
+    {
+      "from": "T9",
+      "to": "T7",
+      "weight": 4.0
+    },
+    {
+      "from": "T19",
+      "to": "T22",
+      "weight": 1.0
+    },
+    {
+      "from": "T10",
+      "to": "T12",
+      "weight": 1.0
+    },
+    {
+      "from": "T9",
+      "to": "T5",
+      "weight": 2.0
+    },
+    {
+      "from": "T0",
+      "to": "T14",
+      "weight": 2.0
+    },
+    {
+      "from": "T4",
+      "to": "T6",
+      "weight": 1.0
+    },
+    {
+      "from": "T22",
+      "to": "T10",
+      "weight": 4.0
+    },
+    {
+      "from": "T12",
+      "to": "T14",
+      "weight": 2.0
+    },
+    {
+      "from": "T24",
+      "to": "T1",
+      "weight": 5.0
+    },
+    {
+      "from": "T3",
+      "to": "T23",
+      "weight": 1.0
+    },
+    {
+      "from": "T2",
+      "to": "T4",
+      "weight": 3.0
+    },
+    {
+      "from": "T15",
+      "to": "T11",
+      "weight": 2.0
+    },
+    {
+      "from": "T8",
+      "to": "T16",
+      "weight": 1.0
+    },
+    {
+      "from": "T17",
+      "to": "T13",
+      "weight": 1.0
+    },
+    {
+      "from": "T23",
+      "to": "T8",
+      "weight": 5.0
+    },
+    {
+      "from": "T23",
+      "to": "T5",
+      "weight": 2.0
+    },
+    {
+      "from": "T14",
+      "to": "T18",
+      "weight": 3.0
+    },
+    {
+      "from": "T21",
+      "to": "T11",
+      "weight": 2.0
+    },
+    {
+      "from": "T4",
+      "to": "T8",
+      "weight": 1.0
+    },
+    {
+      "from": "T17",
+      "to": "T1",
+      "weight": 4.0
+    },
+    {
+      "from": "T6",
+      "to": "T7",
+      "weight": 5.0
+    },
+    {
+      "from": "T23",
+      "to": "T21",
+      "weight": 2.0
+    },
+    {
+      "from": "T6",
+      "to": "T24",
+      "weight": 1.0
+    },
+    {
+      "from": "T11",
+      "to": "T22",
+      "weight": 4.0
+    },
+    {
+      "from": "T2",
+      "to": "T23",
+      "weight": 2.0
+    },
+    {
+      "from": "T4",
+      "to": "T11",
+      "weight": 5.0
+    },
+    {
+      "from": "T20",
+      "to": "T15",
+      "weight": 3.0
+    },
+    {
+      "from": "T17",
+      "to": "T19",
+      "weight": 3.0
+    },
+    {
+      "from": "T4",
+      "to": "T5",
+      "weight": 1.0
+    },
+    {
+      "from": "T22",
+      "to": "T13",
+      "weight": 1.0
+    },
+    {
+      "from": "T18",
+      "to": "T14",
+      "weight": 4.0
+    },
+    {
+      "from": "T19",
+      "to": "T13",
+      "weight": 3.0
+    },
+    {
+      "from": "T5",
+      "to": "T20",
+      "weight": 1.0
+    },
+    {
+      "from": "T5",
+      "to": "T22",
+      "weight": 3.0
+    },
+    {
+      "from": "T20",
+      "to": "T9",
+      "weight": 3.0
+    },
+    {
+      "from": "T20",
+      "to": "T14",
+      "weight": 1.0
+    },
+    {
+      "from": "T12",
+      "to": "T24",
+      "weight": 2.0
+    },
+    {
+      "from": "T3",
+      "to": "T0",
+      "weight": 4.0
+    },
+    {
+      "from": "T0",
+      "to": "T2",
+      "weight": 5.0
+    },
+    {
+      "from": "T1",
+      "to": "T12",
+      "weight": 3.0
+    },
+    {
+      "from": "T4",
+      "to": "T24",
+      "weight": 1.0
+    },
+    {
+      "from": "T13",
+      "to": "T12",
+      "weight": 3.0
+    },
+    {
+      "from": "T11",
+      "to": "T14",
+      "weight": 3.0
+    },
+    {
+      "from": "T1",
+      "to": "T2",
+      "weight": 1.0
+    },
+    {
+      "from": "T24",
+      "to": "T17",
+      "weight": 4.0
+    },
+    {
+      "from": "T7",
+      "to": "T23",
+      "weight": 5.0
+    },
+    {
+      "from": "T16",
+      "to": "T12",
+      "weight": 1.0
+    },
+    {
+      "from": "T23",
+      "to": "T12",
+      "weight": 1.0
+    },
+    {
+      "from": "T4",
+      "to": "T13",
+      "weight": 2.0
+    },
+    {
+      "from": "T20",
+      "to": "T4",
+      "weight": 4.0
+    }
+  ],
+  "description": "Large graph with 25 tasks, multiple SCCs for performance testing"
+}

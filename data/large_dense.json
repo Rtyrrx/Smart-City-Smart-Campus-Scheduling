@@ -1,0 +1,807 @@
+{
+  "tasks": [
+    {
+      "id": "T0",
+      "name": "Maintain_Zone0",
+      "duration": 3.0
+    },
+    {
+      "id": "T1",
+      "name": "Analyze_Zone1",
+      "duration": 6.0
+    },
+    {
+      "id": "T2",
+      "name": "Clean_CameraE2",
+      "duration": 7.0
+    },
+    {
+      "id": "T3",
+      "name": "Clean_Zone3",
+      "duration": 9.0
+    },
+    {
+      "id": "T4",
+      "name": "Analyze_StreetA4",
+      "duration": 1.0
+    },
+    {
+      "id": "T5",
+      "name": "Monitor_CameraE5",
+      "duration": 10.0
+    },
+    {
+      "id": "T6",
+      "name": "Repair_SensorD6",
+      "duration": 5.0
+    },
+    {
+      "id": "T7",
+      "name": "Clean_StreetB7",
+      "duration": 5.0
+    },
+    {
+      "id": "T8",
+      "name": "Repair_SensorD8",
+      "duration": 10.0
+    },
+    {
+      "id": "T9",
+      "name": "Repair_Zone9",
+      "duration": 5.0
+    },
+    {
+      "id": "T10",
+      "name": "Monitor_SensorD10",
+      "duration": 10.0
+    },
+    {
+      "id": "T11",
+      "name": "Clean_ParkC11",
+      "duration": 6.0
+    },
+    {
+      "id": "T12",
+      "name": "Analyze_Zone12",
+      "duration": 4.0
+    },
+    {
+      "id": "T13",
+      "name": "Maintain_StreetB13",
+      "duration": 9.0
+    },
+    {
+      "id": "T14",
+      "name": "Inspect_Zone14",
+      "duration": 10.0
+    },
+    {
+      "id": "T15",
+      "name": "Repair_StreetB15",
+      "duration": 2.0
+    },
+    {
+      "id": "T16",
+      "name": "Inspect_SensorD16",
+      "duration": 10.0
+    },
+    {
+      "id": "T17",
+      "name": "Analyze_CameraE17",
+      "duration": 8.0
+    },
+    {
+      "id": "T18",
+      "name": "Inspect_StreetA18",
+      "duration": 6.0
+    },
+    {
+      "id": "T19",
+      "name": "Inspect_CameraE19",
+      "duration": 9.0
+    },
+    {
+      "id": "T20",
+      "name": "Inspect_SensorD20",
+      "duration": 5.0
+    },
+    {
+      "id": "T21",
+      "name": "Maintain_StreetA21",
+      "duration": 1.0
+    },
+    {
+      "id": "T22",
+      "name": "Repair_SensorD22",
+      "duration": 9.0
+    },
+    {
+      "id": "T23",
+      "name": "Inspect_StreetB23",
+      "duration": 8.0
+    },
+    {
+      "id": "T24",
+      "name": "Maintain_SensorD24",
+      "duration": 3.0
+    },
+    {
+      "id": "T25",
+      "name": "Repair_StreetB25",
+      "duration": 7.0
+    },
+    {
+      "id": "T26",
+      "name": "Clean_SensorD26",
+      "duration": 6.0
+    },
+    {
+      "id": "T27",
+      "name": "Inspect_StreetB27",
+      "duration": 4.0
+    },
+    {
+      "id": "T28",
+      "name": "Repair_ParkC28",
+      "duration": 2.0
+    },
+    {
+      "id": "T29",
+      "name": "Monitor_ParkC29",
+      "duration": 5.0
+    },
+    {
+      "id": "T30",
+      "name": "Inspect_StreetB30",
+      "duration": 5.0
+    },
+    {
+      "id": "T31",
+      "name": "Maintain_CameraE31",
+      "duration": 4.0
+    },
+    {
+      "id": "T32",
+      "name": "Monitor_SensorD32",
+      "duration": 3.0
+    },
+    {
+      "id": "T33",
+      "name": "Repair_StreetA33",
+      "duration": 10.0
+    },
+    {
+      "id": "T34",
+      "name": "Clean_ParkC34",
+      "duration": 1.0
+    },
+    {
+      "id": "T35",
+      "name": "Inspect_CameraE35",
+      "duration": 7.0
+    },
+    {
+      "id": "T36",
+      "name": "Inspect_CameraE36",
+      "duration": 4.0
+    },
+    {
+      "id": "T37",
+      "name": "Inspect_CameraE37",
+      "duration": 3.0
+    },
+    {
+      "id": "T38",
+      "name": "Analyze_Zone38",
+      "duration": 5.0
+    },
+    {
+      "id": "T39",
+      "name": "Analyze_ParkC39",
+      "duration": 2.0
+    }
+  ],
+  "dependencies": [
+    {
+      "from": "T24",
+      "to": "T25",
+      "weight": 5.0
+    },
+    {
+      "from": "T25",
+      "to": "T26",
+      "weight": 4.0
+    },
+    {
+      "from": "T26",
+      "to": "T24",
+      "weight": 3.0
+    },
+    {
+      "from": "T38",
+      "to": "T39",
+      "weight": 3.0
+    },
+    {
+      "from": "T39",
+      "to": "T0",
+      "weight": 1.0
+    },
+    {
+      "from": "T0",
+      "to": "T1",
+      "weight": 2.0
+    },
+    {
+      "from": "T1",
+      "to": "T2",
+      "weight": 3.0
+    },
+    {
+      "from": "T2",
+      "to": "T3",
+      "weight": 5.0
+    },
+    {
+      "from": "T3",
+      "to": "T38",
+      "weight": 5.0
+    },
+    {
+      "from": "T26",
+      "to": "T27",
+      "weight": 4.0
+    },
+    {
+      "from": "T27",
+      "to": "T28",
+      "weight": 3.0
+    },
+    {
+      "from": "T28",
+      "to": "T29",
+      "weight": 2.0
+    },
+    {
+      "from": "T29",
+      "to": "T26",
+      "weight": 2.0
+    },
+    {
+      "from": "T18",
+      "to": "T33",
+      "weight": 3.0
+    },
+    {
+      "from": "T22",
+      "to": "T6",
+      "weight": 2.0
+    },
+    {
+      "from": "T14",
+      "to": "T0",
+      "weight": 1.0
+    },
+    {
+      "from": "T3",
+      "to": "T18",
+      "weight": 3.0
+    },
+    {
+      "from": "T18",
+      "to": "T17",
+      "weight": 3.0
+    },
+    {
+      "from": "T23",
+      "to": "T22",
+      "weight": 4.0
+    },
+    {
+      "from": "T30",
+      "to": "T1",
+      "weight": 1.0
+    },
+    {
+      "from": "T37",
+      "to": "T30",
+      "weight": 1.0
+    },
+    {
+      "from": "T32",
+      "to": "T26",
+      "weight": 2.0
+    },
+    {
+      "from": "T25",
+      "to": "T0",
+      "weight": 3.0
+    },
+    {
+      "from": "T8",
+      "to": "T32",
+      "weight": 5.0
+    },
+    {
+      "from": "T3",
+      "to": "T34",
+      "weight": 1.0
+    },
+    {
+      "from": "T17",
+      "to": "T20",
+      "weight": 5.0
+    },
+    {
+      "from": "T2",
+      "to": "T12",
+      "weight": 4.0
+    },
+    {
+      "from": "T17",
+      "to": "T8",
+      "weight": 5.0
+    },
+    {
+      "from": "T25",
+      "to": "T34",
+      "weight": 1.0
+    },
+    {
+      "from": "T27",
+      "to": "T10",
+      "weight": 1.0
+    },
+    {
+      "from": "T4",
+      "to": "T21",
+      "weight": 3.0
+    },
+    {
+      "from": "T7",
+      "to": "T33",
+      "weight": 4.0
+    },
+    {
+      "from": "T31",
+      "to": "T29",
+      "weight": 4.0
+    },
+    {
+      "from": "T36",
+      "to": "T14",
+      "weight": 4.0
+    },
+    {
+      "from": "T8",
+      "to": "T39",
+      "weight": 5.0
+    },
+    {
+      "from": "T13",
+      "to": "T0",
+      "weight": 4.0
+    },
+    {
+      "from": "T20",
+      "to": "T34",
+      "weight": 1.0
+    },
+    {
+      "from": "T30",
+      "to": "T25",
+      "weight": 3.0
+    },
+    {
+      "from": "T24",
+      "to": "T36",
+      "weight": 4.0
+    },
+    {
+      "from": "T9",
+      "to": "T19",
+      "weight": 5.0
+    },
+    {
+      "from": "T35",
+      "to": "T5",
+      "weight": 1.0
+    },
+    {
+      "from": "T14",
+      "to": "T18",
+      "weight": 1.0
+    },
+    {
+      "from": "T5",
+      "to": "T37",
+      "weight": 2.0
+    },
+    {
+      "from": "T13",
+      "to": "T39",
+      "weight": 2.0
+    },
+    {
+      "from": "T3",
+      "to": "T30",
+      "weight": 1.0
+    },
+    {
+      "from": "T19",
+      "to": "T2",
+      "weight": 2.0
+    },
+    {
+      "from": "T10",
+      "to": "T3",
+      "weight": 4.0
+    },
+    {
+      "from": "T34",
+      "to": "T0",
+      "weight": 4.0
+    },
+    {
+      "from": "T31",
+      "to": "T1",
+      "weight": 3.0
+    },
+    {
+      "from": "T19",
+      "to": "T1",
+      "weight": 2.0
+    },
+    {
+      "from": "T27",
+      "to": "T36",
+      "weight": 4.0
+    },
+    {
+      "from": "T32",
+      "to": "T21",
+      "weight": 3.0
+    },
+    {
+      "from": "T35",
+      "to": "T24",
+      "weight": 5.0
+    },
+    {
+      "from": "T33",
+      "to": "T23",
+      "weight": 3.0
+    },
+    {
+      "from": "T38",
+      "to": "T27",
+      "weight": 5.0
+    },
+    {
+      "from": "T28",
+      "to": "T30",
+      "weight": 3.0
+    },
+    {
+      "from": "T30",
+      "to": "T29",
+      "weight": 1.0
+    },
+    {
+      "from": "T10",
+      "to": "T2",
+      "weight": 2.0
+    },
+    {
+      "from": "T20",
+      "to": "T31",
+      "weight": 1.0
+    },
+    {
+      "from": "T17",
+      "to": "T3",
+      "weight": 5.0
+    },
+    {
+      "from": "T9",
+      "to": "T29",
+      "weight": 5.0
+    },
+    {
+      "from": "T31",
+      "to": "T0",
+      "weight": 2.0
+    },
+    {
+      "from": "T28",
+      "to": "T16",
+      "weight": 2.0
+    },
+    {
+      "from": "T30",
+      "to": "T27",
+      "weight": 1.0
+    },
+    {
+      "from": "T5",
+      "to": "T20",
+      "weight": 4.0
+    },
+    {
+      "from": "T8",
+      "to": "T5",
+      "weight": 1.0
+    },
+    {
+      "from": "T26",
+      "to": "T11",
+      "weight": 2.0
+    },
+    {
+      "from": "T16",
+      "to": "T15",
+      "weight": 4.0
+    },
+    {
+      "from": "T12",
+      "to": "T39",
+      "weight": 3.0
+    },
+    {
+      "from": "T10",
+      "to": "T37",
+      "weight": 3.0
+    },
+    {
+      "from": "T17",
+      "to": "T34",
+      "weight": 1.0
+    },
+    {
+      "from": "T30",
+      "to": "T20",
+      "weight": 1.0
+    },
+    {
+      "from": "T10",
+      "to": "T36",
+      "weight": 1.0
+    },
+    {
+      "from": "T9",
+      "to": "T3",
+      "weight": 5.0
+    },
+    {
+      "from": "T30",
+      "to": "T17",
+      "weight": 2.0
+    },
+    {
+      "from": "T24",
+      "to": "T33",
+      "weight": 2.0
+    },
+    {
+      "from": "T14",
+      "to": "T20",
+      "weight": 5.0
+    },
+    {
+      "from": "T28",
+      "to": "T38",
+      "weight": 5.0
+    },
+    {
+      "from": "T28",
+      "to": "T10",
+      "weight": 3.0
+    },
+    {
+      "from": "T21",
+      "to": "T18",
+      "weight": 3.0
+    },
+    {
+      "from": "T37",
+      "to": "T22",
+      "weight": 4.0
+    },
+    {
+      "from": "T29",
+      "to": "T15",
+      "weight": 5.0
+    },
+    {
+      "from": "T7",
+      "to": "T37",
+      "weight": 3.0
+    },
+    {
+      "from": "T0",
+      "to": "T18",
+      "weight": 3.0
+    },
+    {
+      "from": "T29",
+      "to": "T13",
+      "weight": 3.0
+    },
+    {
+      "from": "T19",
+      "to": "T10",
+      "weight": 3.0
+    },
+    {
+      "from": "T31",
+      "to": "T7",
+      "weight": 2.0
+    },
+    {
+      "from": "T1",
+      "to": "T14",
+      "weight": 4.0
+    },
+    {
+      "from": "T3",
+      "to": "T24",
+      "weight": 3.0
+    },
+    {
+      "from": "T18",
+      "to": "T37",
+      "weight": 2.0
+    },
+    {
+      "from": "T22",
+      "to": "T30",
+      "weight": 3.0
+    },
+    {
+      "from": "T12",
+      "to": "T26",
+      "weight": 3.0
+    },
+    {
+      "from": "T2",
+      "to": "T25",
+      "weight": 5.0
+    },
+    {
+      "from": "T39",
+      "to": "T18",
+      "weight": 1.0
+    },
+    {
+      "from": "T7",
+      "to": "T2",
+      "weight": 5.0
+    },
+    {
+      "from": "T22",
+      "to": "T36",
+      "weight": 3.0
+    },
+    {
+      "from": "T1",
+      "to": "T13",
+      "weight": 2.0
+    },
+    {
+      "from": "T8",
+      "to": "T23",
+      "weight": 1.0
+    },
+    {
+      "from": "T5",
+      "to": "T33",
+      "weight": 4.0
+    },
+    {
+      "from": "T27",
+      "to": "T3",
+      "weight": 2.0
+    },
+    {
+      "from": "T38",
+      "to": "T9",
+      "weight": 3.0
+    },
+    {
+      "from": "T17",
+      "to": "T32",
+      "weight": 5.0
+    },
+    {
+      "from": "T3",
+      "to": "T26",
+      "weight": 1.0
+    },
+    {
+      "from": "T28",
+      "to": "T34",
+      "weight": 4.0
+    },
+    {
+      "from": "T21",
+      "to": "T5",
+      "weight": 5.0
+    },
+    {
+      "from": "T26",
+      "to": "T5",
+      "weight": 1.0
+    },
+    {
+      "from": "T14",
+      "to": "T25",
+      "weight": 4.0
+    },
+    {
+      "from": "T30",
+      "to": "T22",
+      "weight": 4.0
+    },
+    {
+      "from": "T24",
+      "to": "T10",
+      "weight": 2.0
+    },
+    {
+      "from": "T28",
+      "to": "T13",
+      "weight": 2.0
+    },
+    {
+      "from": "T35",
+      "to": "T38",
+      "weight": 4.0
+    },
+    {
+      "from": "T36",
+      "to": "T25",
+      "weight": 2.0
+    },
+    {
+      "from": "T12",
+      "to": "T11",
+      "weight": 1.0
+    },
+    {
+      "from": "T5",
+      "to": "T25",
+      "weight": 4.0
+    },
+    {
+      "from": "T38",
+      "to": "T23",
+      "weight": 4.0
+    },
+    {
+      "from": "T20",
+      "to": "T11",
+      "weight": 5.0
+    },
+    {
+      "from": "T24",
+      "to": "T38",
+      "weight": 5.0
+    },
+    {
+      "from": "T32",
+      "to": "T6",
+      "weight": 2.0
+    },
+    {
+      "from": "T34",
+      "to": "T5",
+      "weight": 1.0
+    },
+    {
+      "from": "T24",
+      "to": "T14",
+      "weight": 2.0
+    }
+  ],
+  "description": "Large dense graph with 40 tasks, complex structure"
+}

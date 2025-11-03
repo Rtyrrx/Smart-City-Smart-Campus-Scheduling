@@ -1,0 +1,407 @@
+{
+  "tasks": [
+    {
+      "id": "T0",
+      "name": "Monitor_StreetB0",
+      "duration": 9.0
+    },
+    {
+      "id": "T1",
+      "name": "Clean_CameraE1",
+      "duration": 8.0
+    },
+    {
+      "id": "T2",
+      "name": "Monitor_Zone2",
+      "duration": 1.0
+    },
+    {
+      "id": "T3",
+      "name": "Monitor_Zone3",
+      "duration": 2.0
+    },
+    {
+      "id": "T4",
+      "name": "Analyze_SensorD4",
+      "duration": 3.0
+    },
+    {
+      "id": "T5",
+      "name": "Clean_Zone5",
+      "duration": 5.0
+    },
+    {
+      "id": "T6",
+      "name": "Repair_Zone6",
+      "duration": 9.0
+    },
+    {
+      "id": "T7",
+      "name": "Inspect_Zone7",
+      "duration": 1.0
+    },
+    {
+      "id": "T8",
+      "name": "Analyze_Zone8",
+      "duration": 8.0
+    },
+    {
+      "id": "T9",
+      "name": "Monitor_SensorD9",
+      "duration": 9.0
+    },
+    {
+      "id": "T10",
+      "name": "Analyze_CameraE10",
+      "duration": 1.0
+    },
+    {
+      "id": "T11",
+      "name": "Inspect_ParkC11",
+      "duration": 9.0
+    },
+    {
+      "id": "T12",
+      "name": "Monitor_StreetA12",
+      "duration": 10.0
+    },
+    {
+      "id": "T13",
+      "name": "Repair_StreetB13",
+      "duration": 10.0
+    },
+    {
+      "id": "T14",
+      "name": "Analyze_CameraE14",
+      "duration": 10.0
+    },
+    {
+      "id": "T15",
+      "name": "Inspect_Zone15",
+      "duration": 1.0
+    },
+    {
+      "id": "T16",
+      "name": "Repair_StreetB16",
+      "duration": 1.0
+    },
+    {
+      "id": "T17",
+      "name": "Repair_Zone17",
+      "duration": 1.0
+    },
+    {
+      "id": "T18",
+      "name": "Monitor_StreetB18",
+      "duration": 3.0
+    },
+    {
+      "id": "T19",
+      "name": "Analyze_ParkC19",
+      "duration": 4.0
+    },
+    {
+      "id": "T20",
+      "name": "Repair_CameraE20",
+      "duration": 2.0
+    },
+    {
+      "id": "T21",
+      "name": "Maintain_StreetB21",
+      "duration": 7.0
+    },
+    {
+      "id": "T22",
+      "name": "Repair_CameraE22",
+      "duration": 1.0
+    },
+    {
+      "id": "T23",
+      "name": "Repair_StreetB23",
+      "duration": 9.0
+    },
+    {
+      "id": "T24",
+      "name": "Maintain_StreetB24",
+      "duration": 3.0
+    },
+    {
+      "id": "T25",
+      "name": "Inspect_CameraE25",
+      "duration": 7.0
+    },
+    {
+      "id": "T26",
+      "name": "Inspect_Zone26",
+      "duration": 9.0
+    },
+    {
+      "id": "T27",
+      "name": "Monitor_Zone27",
+      "duration": 3.0
+    },
+    {
+      "id": "T28",
+      "name": "Maintain_StreetB28",
+      "duration": 9.0
+    },
+    {
+      "id": "T29",
+      "name": "Repair_StreetA29",
+      "duration": 7.0
+    }
+  ],
+  "dependencies": [
+    {
+      "from": "T9",
+      "to": "T16",
+      "weight": 4.0
+    },
+    {
+      "from": "T15",
+      "to": "T29",
+      "weight": 3.0
+    },
+    {
+      "from": "T21",
+      "to": "T24",
+      "weight": 1.0
+    },
+    {
+      "from": "T5",
+      "to": "T25",
+      "weight": 3.0
+    },
+    {
+      "from": "T19",
+      "to": "T25",
+      "weight": 4.0
+    },
+    {
+      "from": "T16",
+      "to": "T18",
+      "weight": 1.0
+    },
+    {
+      "from": "T4",
+      "to": "T24",
+      "weight": 1.0
+    },
+    {
+      "from": "T1",
+      "to": "T18",
+      "weight": 1.0
+    },
+    {
+      "from": "T12",
+      "to": "T28",
+      "weight": 4.0
+    },
+    {
+      "from": "T4",
+      "to": "T17",
+      "weight": 4.0
+    },
+    {
+      "from": "T10",
+      "to": "T19",
+      "weight": 3.0
+    },
+    {
+      "from": "T19",
+      "to": "T28",
+      "weight": 4.0
+    },
+    {
+      "from": "T9",
+      "to": "T26",
+      "weight": 5.0
+    },
+    {
+      "from": "T11",
+      "to": "T13",
+      "weight": 5.0
+    },
+    {
+      "from": "T17",
+      "to": "T19",
+      "weight": 3.0
+    },
+    {
+      "from": "T4",
+      "to": "T29",
+      "weight": 3.0
+    },
+    {
+      "from": "T10",
+      "to": "T14",
+      "weight": 2.0
+    },
+    {
+      "from": "T20",
+      "to": "T29",
+      "weight": 5.0
+    },
+    {
+      "from": "T1",
+      "to": "T10",
+      "weight": 1.0
+    },
+    {
+      "from": "T7",
+      "to": "T27",
+      "weight": 5.0
+    },
+    {
+      "from": "T0",
+      "to": "T7",
+      "weight": 5.0
+    },
+    {
+      "from": "T15",
+      "to": "T16",
+      "weight": 5.0
+    },
+    {
+      "from": "T0",
+      "to": "T26",
+      "weight": 2.0
+    },
+    {
+      "from": "T9",
+      "to": "T29",
+      "weight": 1.0
+    },
+    {
+      "from": "T8",
+      "to": "T29",
+      "weight": 2.0
+    },
+    {
+      "from": "T12",
+      "to": "T22",
+      "weight": 4.0
+    },
+    {
+      "from": "T14",
+      "to": "T17",
+      "weight": 3.0
+    },
+    {
+      "from": "T0",
+      "to": "T6",
+      "weight": 1.0
+    },
+    {
+      "from": "T1",
+      "to": "T9",
+      "weight": 2.0
+    },
+    {
+      "from": "T2",
+      "to": "T11",
+      "weight": 2.0
+    },
+    {
+      "from": "T0",
+      "to": "T23",
+      "weight": 2.0
+    },
+    {
+      "from": "T3",
+      "to": "T14",
+      "weight": 2.0
+    },
+    {
+      "from": "T15",
+      "to": "T22",
+      "weight": 1.0
+    },
+    {
+      "from": "T14",
+      "to": "T16",
+      "weight": 3.0
+    },
+    {
+      "from": "T11",
+      "to": "T23",
+      "weight": 4.0
+    },
+    {
+      "from": "T1",
+      "to": "T5",
+      "weight": 1.0
+    },
+    {
+      "from": "T11",
+      "to": "T28",
+      "weight": 2.0
+    },
+    {
+      "from": "T7",
+      "to": "T28",
+      "weight": 1.0
+    },
+    {
+      "from": "T1",
+      "to": "T28",
+      "weight": 1.0
+    },
+    {
+      "from": "T1",
+      "to": "T11",
+      "weight": 1.0
+    },
+    {
+      "from": "T11",
+      "to": "T22",
+      "weight": 1.0
+    },
+    {
+      "from": "T15",
+      "to": "T28",
+      "weight": 1.0
+    },
+    {
+      "from": "T2",
+      "to": "T8",
+      "weight": 1.0
+    },
+    {
+      "from": "T8",
+      "to": "T22",
+      "weight": 2.0
+    },
+    {
+      "from": "T21",
+      "to": "T25",
+      "weight": 3.0
+    },
+    {
+      "from": "T3",
+      "to": "T4",
+      "weight": 4.0
+    },
+    {
+      "from": "T1",
+      "to": "T16",
+      "weight": 5.0
+    },
+    {
+      "from": "T6",
+      "to": "T10",
+      "weight": 1.0
+    },
+    {
+      "from": "T0",
+      "to": "T17",
+      "weight": 5.0
+    },
+    {
+      "from": "T6",
+      "to": "T14",
+      "weight": 3.0
+    }
+  ],
+  "description": "Large DAG with 30 tasks, sparse"
+}

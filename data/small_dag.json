@@ -1,0 +1,97 @@
+{
+  "tasks": [
+    {
+      "id": "T0",
+      "name": "Inspect_SensorD0",
+      "duration": 9.0
+    },
+    {
+      "id": "T1",
+      "name": "Inspect_StreetA1",
+      "duration": 6.0
+    },
+    {
+      "id": "T2",
+      "name": "Monitor_ParkC2",
+      "duration": 10.0
+    },
+    {
+      "id": "T3",
+      "name": "Monitor_ParkC3",
+      "duration": 3.0
+    },
+    {
+      "id": "T4",
+      "name": "Clean_StreetA4",
+      "duration": 7.0
+    },
+    {
+      "id": "T5",
+      "name": "Inspect_StreetA5",
+      "duration": 1.0
+    },
+    {
+      "id": "T6",
+      "name": "Repair_Zone6",
+      "duration": 1.0
+    },
+    {
+      "id": "T7",
+      "name": "Repair_ParkC7",
+      "duration": 4.0
+    }
+  ],
+  "dependencies": [
+    {
+      "from": "T5",
+      "to": "T7",
+      "weight": 1.0
+    },
+    {
+      "from": "T1",
+      "to": "T6",
+      "weight": 2.0
+    },
+    {
+      "from": "T2",
+      "to": "T4",
+      "weight": 1.0
+    },
+    {
+      "from": "T2",
+      "to": "T6",
+      "weight": 3.0
+    },
+    {
+      "from": "T5",
+      "to": "T6",
+      "weight": 4.0
+    },
+    {
+      "from": "T0",
+      "to": "T4",
+      "weight": 5.0
+    },
+    {
+      "from": "T0",
+      "to": "T2",
+      "weight": 4.0
+    },
+    {
+      "from": "T0",
+      "to": "T3",
+      "weight": 1.0
+    },
+    {
+      "from": "T0",
+      "to": "T7",
+      "weight": 2.0
+    },
+    {
+      "from": "T3",
+      "to": "T4",
+      "weight": 5.0
+    }
+  ],
+  "description": "Small DAG with 8 tasks, sparse connections"
+}

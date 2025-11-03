@@ -1,0 +1,132 @@
+{
+  "tasks": [
+    {
+      "id": "T0",
+      "name": "Clean_ParkC0",
+      "duration": 4.0
+    },
+    {
+      "id": "T1",
+      "name": "Inspect_StreetA1",
+      "duration": 3.0
+    },
+    {
+      "id": "T2",
+      "name": "Maintain_StreetB2",
+      "duration": 3.0
+    },
+    {
+      "id": "T3",
+      "name": "Analyze_ParkC3",
+      "duration": 9.0
+    },
+    {
+      "id": "T4",
+      "name": "Analyze_StreetA4",
+      "duration": 9.0
+    },
+    {
+      "id": "T5",
+      "name": "Maintain_ParkC5",
+      "duration": 8.0
+    },
+    {
+      "id": "T6",
+      "name": "Repair_Zone6",
+      "duration": 8.0
+    },
+    {
+      "id": "T7",
+      "name": "Repair_Zone7",
+      "duration": 5.0
+    },
+    {
+      "id": "T8",
+      "name": "Monitor_StreetA8",
+      "duration": 4.0
+    },
+    {
+      "id": "T9",
+      "name": "Repair_Zone9",
+      "duration": 1.0
+    }
+  ],
+  "dependencies": [
+    {
+      "from": "T1",
+      "to": "T2",
+      "weight": 1.0
+    },
+    {
+      "from": "T2",
+      "to": "T1",
+      "weight": 2.0
+    },
+    {
+      "from": "T9",
+      "to": "T0",
+      "weight": 2.0
+    },
+    {
+      "from": "T4",
+      "to": "T6",
+      "weight": 1.0
+    },
+    {
+      "from": "T0",
+      "to": "T5",
+      "weight": 1.0
+    },
+    {
+      "from": "T0",
+      "to": "T9",
+      "weight": 5.0
+    },
+    {
+      "from": "T1",
+      "to": "T4",
+      "weight": 5.0
+    },
+    {
+      "from": "T1",
+      "to": "T8",
+      "weight": 2.0
+    },
+    {
+      "from": "T6",
+      "to": "T9",
+      "weight": 3.0
+    },
+    {
+      "from": "T4",
+      "to": "T5",
+      "weight": 2.0
+    },
+    {
+      "from": "T5",
+      "to": "T2",
+      "weight": 2.0
+    },
+    {
+      "from": "T8",
+      "to": "T3",
+      "weight": 2.0
+    },
+    {
+      "from": "T8",
+      "to": "T6",
+      "weight": 5.0
+    },
+    {
+      "from": "T9",
+      "to": "T3",
+      "weight": 4.0
+    },
+    {
+      "from": "T4",
+      "to": "T9",
+      "weight": 4.0
+    }
+  ],
+  "description": "Small mixed graph with 10 tasks, 1-2 cycles"
+}

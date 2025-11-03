@@ -1,0 +1,322 @@
+{
+  "tasks": [
+    {
+      "id": "T0",
+      "name": "Monitor_Zone0",
+      "duration": 5.0
+    },
+    {
+      "id": "T1",
+      "name": "Inspect_StreetA1",
+      "duration": 9.0
+    },
+    {
+      "id": "T2",
+      "name": "Maintain_Zone2",
+      "duration": 5.0
+    },
+    {
+      "id": "T3",
+      "name": "Clean_ParkC3",
+      "duration": 2.0
+    },
+    {
+      "id": "T4",
+      "name": "Maintain_StreetA4",
+      "duration": 1.0
+    },
+    {
+      "id": "T5",
+      "name": "Clean_CameraE5",
+      "duration": 9.0
+    },
+    {
+      "id": "T6",
+      "name": "Monitor_StreetB6",
+      "duration": 5.0
+    },
+    {
+      "id": "T7",
+      "name": "Repair_CameraE7",
+      "duration": 6.0
+    },
+    {
+      "id": "T8",
+      "name": "Maintain_SensorD8",
+      "duration": 10.0
+    },
+    {
+      "id": "T9",
+      "name": "Maintain_StreetA9",
+      "duration": 8.0
+    },
+    {
+      "id": "T10",
+      "name": "Maintain_ParkC10",
+      "duration": 10.0
+    },
+    {
+      "id": "T11",
+      "name": "Clean_ParkC11",
+      "duration": 8.0
+    },
+    {
+      "id": "T12",
+      "name": "Repair_StreetA12",
+      "duration": 7.0
+    },
+    {
+      "id": "T13",
+      "name": "Clean_StreetA13",
+      "duration": 6.0
+    },
+    {
+      "id": "T14",
+      "name": "Maintain_CameraE14",
+      "duration": 8.0
+    },
+    {
+      "id": "T15",
+      "name": "Inspect_SensorD15",
+      "duration": 9.0
+    },
+    {
+      "id": "T16",
+      "name": "Clean_SensorD16",
+      "duration": 7.0
+    },
+    {
+      "id": "T17",
+      "name": "Clean_StreetA17",
+      "duration": 2.0
+    }
+  ],
+  "dependencies": [
+    {
+      "from": "T5",
+      "to": "T6",
+      "weight": 5.0
+    },
+    {
+      "from": "T6",
+      "to": "T5",
+      "weight": 5.0
+    },
+    {
+      "from": "T1",
+      "to": "T2",
+      "weight": 5.0
+    },
+    {
+      "from": "T2",
+      "to": "T3",
+      "weight": 5.0
+    },
+    {
+      "from": "T3",
+      "to": "T4",
+      "weight": 2.0
+    },
+    {
+      "from": "T4",
+      "to": "T5",
+      "weight": 4.0
+    },
+    {
+      "from": "T5",
+      "to": "T1",
+      "weight": 4.0
+    },
+    {
+      "from": "T7",
+      "to": "T8",
+      "weight": 4.0
+    },
+    {
+      "from": "T8",
+      "to": "T9",
+      "weight": 1.0
+    },
+    {
+      "from": "T9",
+      "to": "T7",
+      "weight": 1.0
+    },
+    {
+      "from": "T6",
+      "to": "T3",
+      "weight": 5.0
+    },
+    {
+      "from": "T4",
+      "to": "T11",
+      "weight": 4.0
+    },
+    {
+      "from": "T4",
+      "to": "T10",
+      "weight": 2.0
+    },
+    {
+      "from": "T17",
+      "to": "T7",
+      "weight": 2.0
+    },
+    {
+      "from": "T0",
+      "to": "T13",
+      "weight": 4.0
+    },
+    {
+      "from": "T9",
+      "to": "T3",
+      "weight": 1.0
+    },
+    {
+      "from": "T5",
+      "to": "T0",
+      "weight": 4.0
+    },
+    {
+      "from": "T0",
+      "to": "T12",
+      "weight": 5.0
+    },
+    {
+      "from": "T10",
+      "to": "T4",
+      "weight": 2.0
+    },
+    {
+      "from": "T11",
+      "to": "T0",
+      "weight": 1.0
+    },
+    {
+      "from": "T7",
+      "to": "T3",
+      "weight": 1.0
+    },
+    {
+      "from": "T1",
+      "to": "T7",
+      "weight": 5.0
+    },
+    {
+      "from": "T14",
+      "to": "T6",
+      "weight": 5.0
+    },
+    {
+      "from": "T13",
+      "to": "T14",
+      "weight": 1.0
+    },
+    {
+      "from": "T2",
+      "to": "T14",
+      "weight": 4.0
+    },
+    {
+      "from": "T10",
+      "to": "T8",
+      "weight": 3.0
+    },
+    {
+      "from": "T2",
+      "to": "T13",
+      "weight": 2.0
+    },
+    {
+      "from": "T7",
+      "to": "T0",
+      "weight": 5.0
+    },
+    {
+      "from": "T13",
+      "to": "T10",
+      "weight": 3.0
+    },
+    {
+      "from": "T5",
+      "to": "T12",
+      "weight": 3.0
+    },
+    {
+      "from": "T9",
+      "to": "T8",
+      "weight": 5.0
+    },
+    {
+      "from": "T0",
+      "to": "T11",
+      "weight": 5.0
+    },
+    {
+      "from": "T8",
+      "to": "T13",
+      "weight": 5.0
+    },
+    {
+      "from": "T16",
+      "to": "T6",
+      "weight": 1.0
+    },
+    {
+      "from": "T6",
+      "to": "T17",
+      "weight": 5.0
+    },
+    {
+      "from": "T2",
+      "to": "T6",
+      "weight": 4.0
+    },
+    {
+      "from": "T4",
+      "to": "T13",
+      "weight": 3.0
+    },
+    {
+      "from": "T13",
+      "to": "T17",
+      "weight": 4.0
+    },
+    {
+      "from": "T6",
+      "to": "T14",
+      "weight": 3.0
+    },
+    {
+      "from": "T3",
+      "to": "T2",
+      "weight": 5.0
+    },
+    {
+      "from": "T16",
+      "to": "T13",
+      "weight": 4.0
+    },
+    {
+      "from": "T5",
+      "to": "T15",
+      "weight": 4.0
+    },
+    {
+      "from": "T14",
+      "to": "T17",
+      "weight": 4.0
+    },
+    {
+      "from": "T11",
+      "to": "T13",
+      "weight": 2.0
+    },
+    {
+      "from": "T3",
+      "to": "T16",
+      "weight": 4.0
+    }
+  ],
+  "description": "Medium dense graph with 18 tasks, several cycles"
+}

@@ -1,0 +1,177 @@
+{
+  "tasks": [
+    {
+      "id": "T0",
+      "name": "Inspect_ParkC0",
+      "duration": 8.0
+    },
+    {
+      "id": "T1",
+      "name": "Repair_StreetB1",
+      "duration": 7.0
+    },
+    {
+      "id": "T2",
+      "name": "Maintain_StreetA2",
+      "duration": 8.0
+    },
+    {
+      "id": "T3",
+      "name": "Clean_StreetB3",
+      "duration": 9.0
+    },
+    {
+      "id": "T4",
+      "name": "Analyze_SensorD4",
+      "duration": 10.0
+    },
+    {
+      "id": "T5",
+      "name": "Inspect_StreetA5",
+      "duration": 8.0
+    },
+    {
+      "id": "T6",
+      "name": "Maintain_StreetA6",
+      "duration": 1.0
+    },
+    {
+      "id": "T7",
+      "name": "Repair_CameraE7",
+      "duration": 3.0
+    },
+    {
+      "id": "T8",
+      "name": "Repair_CameraE8",
+      "duration": 4.0
+    },
+    {
+      "id": "T9",
+      "name": "Monitor_StreetA9",
+      "duration": 3.0
+    },
+    {
+      "id": "T10",
+      "name": "Analyze_StreetA10",
+      "duration": 6.0
+    },
+    {
+      "id": "T11",
+      "name": "Clean_ParkC11",
+      "duration": 1.0
+    }
+  ],
+  "dependencies": [
+    {
+      "from": "T9",
+      "to": "T10",
+      "weight": 4.0
+    },
+    {
+      "from": "T10",
+      "to": "T9",
+      "weight": 2.0
+    },
+    {
+      "from": "T8",
+      "to": "T10",
+      "weight": 5.0
+    },
+    {
+      "from": "T2",
+      "to": "T5",
+      "weight": 4.0
+    },
+    {
+      "from": "T6",
+      "to": "T8",
+      "weight": 3.0
+    },
+    {
+      "from": "T1",
+      "to": "T6",
+      "weight": 3.0
+    },
+    {
+      "from": "T8",
+      "to": "T1",
+      "weight": 1.0
+    },
+    {
+      "from": "T9",
+      "to": "T8",
+      "weight": 1.0
+    },
+    {
+      "from": "T8",
+      "to": "T5",
+      "weight": 1.0
+    },
+    {
+      "from": "T8",
+      "to": "T9",
+      "weight": 2.0
+    },
+    {
+      "from": "T0",
+      "to": "T4",
+      "weight": 4.0
+    },
+    {
+      "from": "T1",
+      "to": "T7",
+      "weight": 4.0
+    },
+    {
+      "from": "T10",
+      "to": "T5",
+      "weight": 4.0
+    },
+    {
+      "from": "T5",
+      "to": "T6",
+      "weight": 3.0
+    },
+    {
+      "from": "T4",
+      "to": "T3",
+      "weight": 3.0
+    },
+    {
+      "from": "T6",
+      "to": "T0",
+      "weight": 3.0
+    },
+    {
+      "from": "T1",
+      "to": "T2",
+      "weight": 5.0
+    },
+    {
+      "from": "T0",
+      "to": "T5",
+      "weight": 1.0
+    },
+    {
+      "from": "T2",
+      "to": "T7",
+      "weight": 3.0
+    },
+    {
+      "from": "T0",
+      "to": "T6",
+      "weight": 4.0
+    },
+    {
+      "from": "T2",
+      "to": "T1",
+      "weight": 2.0
+    },
+    {
+      "from": "T4",
+      "to": "T10",
+      "weight": 5.0
+    }
+  ],
+  "description": "Medium graph with 12 tasks, multiple SCCs"
+}

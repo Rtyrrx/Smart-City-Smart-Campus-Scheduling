@@ -1,0 +1,207 @@
+{
+  "tasks": [
+    {
+      "id": "T0",
+      "name": "Clean_ParkC0",
+      "duration": 10.0
+    },
+    {
+      "id": "T1",
+      "name": "Repair_StreetA1",
+      "duration": 2.0
+    },
+    {
+      "id": "T2",
+      "name": "Analyze_ParkC2",
+      "duration": 1.0
+    },
+    {
+      "id": "T3",
+      "name": "Repair_ParkC3",
+      "duration": 9.0
+    },
+    {
+      "id": "T4",
+      "name": "Analyze_StreetB4",
+      "duration": 10.0
+    },
+    {
+      "id": "T5",
+      "name": "Monitor_Zone5",
+      "duration": 4.0
+    },
+    {
+      "id": "T6",
+      "name": "Monitor_Zone6",
+      "duration": 2.0
+    },
+    {
+      "id": "T7",
+      "name": "Monitor_SensorD7",
+      "duration": 4.0
+    },
+    {
+      "id": "T8",
+      "name": "Analyze_StreetB8",
+      "duration": 5.0
+    },
+    {
+      "id": "T9",
+      "name": "Repair_SensorD9",
+      "duration": 8.0
+    },
+    {
+      "id": "T10",
+      "name": "Analyze_SensorD10",
+      "duration": 7.0
+    },
+    {
+      "id": "T11",
+      "name": "Maintain_StreetB11",
+      "duration": 1.0
+    },
+    {
+      "id": "T12",
+      "name": "Monitor_StreetA12",
+      "duration": 7.0
+    },
+    {
+      "id": "T13",
+      "name": "Clean_Zone13",
+      "duration": 1.0
+    },
+    {
+      "id": "T14",
+      "name": "Clean_SensorD14",
+      "duration": 2.0
+    }
+  ],
+  "dependencies": [
+    {
+      "from": "T0",
+      "to": "T11",
+      "weight": 1.0
+    },
+    {
+      "from": "T0",
+      "to": "T3",
+      "weight": 2.0
+    },
+    {
+      "from": "T0",
+      "to": "T14",
+      "weight": 5.0
+    },
+    {
+      "from": "T0",
+      "to": "T1",
+      "weight": 4.0
+    },
+    {
+      "from": "T0",
+      "to": "T9",
+      "weight": 2.0
+    },
+    {
+      "from": "T4",
+      "to": "T7",
+      "weight": 1.0
+    },
+    {
+      "from": "T2",
+      "to": "T9",
+      "weight": 2.0
+    },
+    {
+      "from": "T1",
+      "to": "T3",
+      "weight": 1.0
+    },
+    {
+      "from": "T6",
+      "to": "T9",
+      "weight": 2.0
+    },
+    {
+      "from": "T3",
+      "to": "T7",
+      "weight": 3.0
+    },
+    {
+      "from": "T12",
+      "to": "T14",
+      "weight": 3.0
+    },
+    {
+      "from": "T6",
+      "to": "T10",
+      "weight": 5.0
+    },
+    {
+      "from": "T0",
+      "to": "T8",
+      "weight": 1.0
+    },
+    {
+      "from": "T2",
+      "to": "T4",
+      "weight": 3.0
+    },
+    {
+      "from": "T2",
+      "to": "T3",
+      "weight": 1.0
+    },
+    {
+      "from": "T11",
+      "to": "T13",
+      "weight": 3.0
+    },
+    {
+      "from": "T4",
+      "to": "T9",
+      "weight": 2.0
+    },
+    {
+      "from": "T1",
+      "to": "T2",
+      "weight": 1.0
+    },
+    {
+      "from": "T4",
+      "to": "T8",
+      "weight": 5.0
+    },
+    {
+      "from": "T8",
+      "to": "T14",
+      "weight": 1.0
+    },
+    {
+      "from": "T0",
+      "to": "T13",
+      "weight": 1.0
+    },
+    {
+      "from": "T10",
+      "to": "T12",
+      "weight": 5.0
+    },
+    {
+      "from": "T3",
+      "to": "T14",
+      "weight": 2.0
+    },
+    {
+      "from": "T6",
+      "to": "T12",
+      "weight": 4.0
+    },
+    {
+      "from": "T8",
+      "to": "T11",
+      "weight": 3.0
+    }
+  ],
+  "description": "Medium DAG with 15 tasks, moderate density"
+}
